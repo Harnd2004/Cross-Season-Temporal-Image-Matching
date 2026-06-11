@@ -1,0 +1,35 @@
+data:
+  summer_dir: data/summer
+  winter_dir: data/winter
+  extensions: [".jpg", ".jpeg", ".png", ".bmp"]
+
+processing:
+  # Matcher backend: "lightglue" | "sift" | "onnx" | "auto" (tries onnx first, then lightglue, then sift)
+  matcher: onnx
+  # GPU device: "cuda" | "cpu" | null (auto-detect)
+  device: null
+  # SuperPoint / LightGlue settings
+  max_keypoints: 1024
+  # SIFT fallback settings
+  nfeatures: 8000
+  ratio_test: 0.75
+  # Image sizing
+  max_size: 512
+  grayscale: true
+  # Preprocessing
+  clahe: true
+  hist_match: false
+  # RANSAC / homography
+  ransac_reproj_threshold: 3.0
+  min_matches: 5
+  min_inliers: 5
+
+runtime:
+  save_visualizations: true
+  overwrite: true
+  num_sample_exports: 5
+
+output:
+  matches_dir: output/matches
+  warped_dir: output/warped
+  logs_dir: output/logs

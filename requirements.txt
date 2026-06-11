@@ -1,0 +1,14 @@
+numpy>=1.24
+opencv-python>=4.8
+PyYAML>=6.0
+matplotlib>=3.7
+pandas>=2.0
+onnxruntime>=1.17
+# Deep feature matching (GPU-accelerated)
+# Install torch first (CUDA build):
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+# Then install lightglue:
+#   pip install lightglue
+torch>=2.0
+torchvision>=0.15
+lightglue>=0.1

@@ -1,0 +1,13 @@
+{
+  "num_pairs": 10,
+  "matcher": "ONNXLightGlueMatcher",
+  "avg_data_loading_ms": 15.652000000000001,
+  "avg_feature_matching_ms": 2791.6785,
+  "avg_matrix_estimation_ms": 2.2719,
+  "avg_total_ms": 2809.6025,
+  "avg_inlier_ratio": 0.82394,
+  "max_inlier_ratio": 0.94,
+  "pct_pairs_ok": 100.0,
+  "avg_inliers": 91.8,
+  "pairs_above_60pct_inliers": 10
+}
