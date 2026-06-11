@@ -21,3 +21,6 @@ Thumbs.db
 
 # Scratch directory
 scratch/
+
+# Binary submission packages
+*.zip
